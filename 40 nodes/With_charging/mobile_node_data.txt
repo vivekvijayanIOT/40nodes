@@ -1,0 +1,65 @@
+		Data collected by Mobile node
+
+---------------------------------------------------
+
+
+
+		Node3 Found at [xpos:9][ypos:6]  
+		Node3 -> Charge:100
+
+		Node4 Found at [xpos:4][ypos:3]  
+		Node4 -> Charge:100
+
+		Node2 Found at [xpos:34][ypos:12]  
+		Node2 -> Charge:99
+
+		Node16 Found at [xpos:43][ypos:23]  
+		Node16 -> Charge:97
+
+		Node9 Found at [xpos:65][ypos:34]  
+		Node9 -> Charge:74
+
+		Node15 Found at [xpos:65][ypos:54]  
+		Node15 -> Charge:73
+
+		Node7 Found at [xpos:45][ypos:34]  
+		Node7 -> Charge:72
+
+		Node8 Found at [xpos:43][ypos:35]  
+		Node8 -> Charge:72
+
+		Node13 Found at [xpos:56][ypos:54]  
+		Node13 -> Charge:72
+
+		Node17 Found at [xpos:34][ypos:45]  
+		Node17 -> Charge:71
+
+		Node1 Found at [xpos:2][ypos:45]  
+		Node1 -> Charge:69
+
+		Node10 Found at [xpos:12][ypos:54]  
+		Node10 -> Charge:69
+
+		Node6 Found at [xpos:76][ypos:56]  
+		Node6 -> Charge:62
+
+		Node11 Found at [xpos:56][ypos:67]  
+		Node11 -> Charge:62
+
+		Node18 Found at [xpos:56][ypos:67]  
+		Node18 -> Charge:62
+
+		Node12 Found at [xpos:87][ypos:67]  
+		Node12 -> Charge:60
+
+		Node14 Found at [xpos:87][ypos:67]  
+		Node14 -> Charge:60
+
+		Node19 Found at [xpos:78][ypos:89]  
+		Node19 -> Charge:41
+
+		Node5 Found at [xpos:4][ypos:99]  
+		Node5 -> Charge:35
+
+		Node20 Found at [xpos:98][ypos:98]  
+		Node20 -> Charge:27	Charged by Mobile node
