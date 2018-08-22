@@ -1093,7 +1093,6 @@ def searching(x,y,r,times):
 				mfile.write("\tCharged by Mobile node")
 				times=times+4
 
-
 	if(N41.check!=1):
 		N41.update_time(times)
 
@@ -1301,7 +1300,6 @@ print('\n\nefficiency of network: %d %%'%effecting)
 valx=N26.check+N27.check+N28.check+N29.check+N30.check+N31.check+N32.check+N33.check+N34.check+N35.check+N36.check+N37.check+N38.check+N39.check+N40.check
 balance=N1.check+N2.check+N3.check+N4.check+N5.check+N6.check+N7.check+N8.check+N9.check+N10.check+N11.check+N12.check+N13.check+N14.check+N15.check+N16.check+N17.check+N18.check+N19.check+N20.check+N21.check+N22.check+N23.check+N24.check+N25.check+valx
 print('\n%d Nodes alive in network'%(80-lenn-balance))
-
 
 whennetworkstop()
 
