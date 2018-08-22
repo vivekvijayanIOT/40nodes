@@ -79,7 +79,7 @@ class dyn_node:
 		self.radius-=5
 
 
-total_nodes=20
+total_nodes=40
 charg=[0]
 
 print("**** WSN Execution starts ****\n")
@@ -88,13 +88,13 @@ D=dyn_node(Mobile_node_radius)
 ques=input("Do you want to set the charge of static node? Y or N \n")
 if ques=='y':
 	print('OK.. enter the charge of nodes respectively..')
-	for a in range(1,21):
+	for a in range(1,41):
 		print("Charge of Node-%d"%a)
 		w=int(input())
 		charg.append(w)
 else:
 	print('The default value of charge : 100% is set to all nodes')
-	for a in range(1,21):
+	for a in range(1,41):
 		print("Charge of Node-%d : 100"%a)
 		charg.append(100)
 
@@ -140,8 +140,48 @@ def effect():
 		effect=effect+1
 	if(N20.charge!=0.0):
 		effect=effect+1
+	if(N21.charge!=0.0):
+		effect=effect+1
+	if(N22.charge!=0.0):
+		effect=effect+1
+	if(N23.charge!=0.0):
+		effect=effect+1
+	if(N24.charge!=0.0):
+		effect=effect+1
+	if(N25.charge!=0.0):
+		effect=effect+1
+	if(N26.charge!=0.0):
+		effect=effect+1
+	if(N27.charge!=0.0):
+		effect=effect+1
+	if(N28.charge!=0.0):
+		effect=effect+1
+	if(N29.charge!=0.0):
+		effect=effect+1
+	if(N30.charge!=0.0):
+		effect=effect+1
+	if(N31.charge!=0.0):
+		effect=effect+1
+	if(N32.charge!=0.0):
+		effect=effect+1
+	if(N33.charge!=0.0):
+		effect=effect+1
+	if(N34.charge!=0.0):
+		effect=effect+1
+	if(N35.charge!=0.0):
+		effect=effect+1
+	if(N36.charge!=0.0):
+		effect=effect+1
+	if(N37.charge!=0.0):
+		effect=effect+1
+	if(N38.charge!=0.0):
+		effect=effect+1
+	if(N39.charge!=0.0):
+		effect=effect+1
+	if(N40.charge!=0.0):
+		effect=effect+1
 
-	return effect/20*100
+	return effect/40*100
 
 def leftcheck():
 	if N1.charge<1 and N1.qq==0:
@@ -224,10 +264,90 @@ def leftcheck():
 		lefttime.append(times)
 		nodename.append('Node 20')
 		N20.qq=1
+	if N21.charge<1 and N21.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 21')
+		N21.qq=1
+	if N22.charge<1 and N22.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 22')
+		N22.qq=1
+	if N23.charge<1 and N23.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 23')
+		N23.qq=1
+	if N24.charge<1 and N24.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 24')
+		N24.qq=1
+	if N25.charge<1 and N25.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 25')
+		N25.qq=1
+	if N26.charge<1 and N26.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 26')
+		N26.qq=1
+	if N27.charge<1 and N27.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 27')
+		N27.qq=1
+	if N28.charge<1 and N28.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 28')
+		N28.qq=1
+	if N29.charge<1 and N29.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 29')
+		N29.qq=1
+	if N30.charge<1 and N30.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 30')
+		N30.qq=1
+	if N31.charge<1 and N31.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 31')
+		N31.qq=1
+	if N32.charge<1 and N32.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 32')
+		N32.qq=1
+	if N33.charge<1 and N33.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 33')
+		N33.qq=1
+	if N34.charge<1 and N34.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 34')
+		N34.qq=1
+	if N35.charge<1 and N35.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 35')
+		N35.qq=1
+	if N36.charge<1 and N36.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 36')
+		N36.qq=1
+	if N37.charge<1 and N37.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 37')
+		N37.qq=1
+	if N38.charge<1 and N38.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 38')
+		N38.qq=1
+	if N39.charge<1 and N39.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 39')
+		N39.qq=1
+	if N40.charge<1 and N40.qq==0:
+		lefttime.append(times)
+		nodename.append('Node 40')
+		N40.qq=1
 
 xp=[]
 yp=[]
-for a in range(0,20):
+for a in range(0,40):
 	xp.append(int(input('Enter the X-axis value for NODE - %d : '%a)))
 	yp.append(int(input('Enter the Y-axis value for NODE - %d : '%a)))
 
@@ -239,8 +359,16 @@ N1,N2,N3,N4,N5=node(charg[1],xp[0],yp[0]),node(charg[2],xp[1],yp[1]),node(charg[
 N6,N7,N8,N9,N10=node(charg[6],xp[5],yp[5]),node(charg[7],xp[6],yp[6]),node(charg[8],xp[7],yp[7]),node(charg[9],xp[8],yp[8]),node(charg[10],xp[9],yp[9])
 N11,N12,N13,N14,N15=node(charg[11],xp[10],yp[10]),node(charg[12],xp[11],yp[11]),node(charg[13],xp[12],yp[12]),node(charg[14],xp[13],yp[13]),node(charg[15],xp[14],yp[14])
 N16,N17,N18,N19,N20=node(charg[16],xp[15],yp[15]),node(charg[17],xp[16],yp[16]),node(charg[18],xp[17],yp[17]),node(charg[19],xp[18],yp[18]),node(charg[20],xp[19],yp[19])
+
+N21,N22,N23,N24,N25=node(charg[21],xp[20],yp[20]),node(charg[22],xp[21],yp[21]),node(charg[23],xp[22],yp[22]),node(charg[24],xp[23],yp[23]),node(charg[25],xp[24],yp[24])
+N26,N27,N28,N29,N30=node(charg[26],xp[25],yp[25]),node(charg[27],xp[26],yp[26]),node(charg[28],xp[27],yp[27]),node(charg[29],xp[28],yp[28]),node(charg[30],xp[29],yp[29])
+N31,N32,N33,N34,N35=node(charg[31],xp[30],yp[30]),node(charg[32],xp[31],yp[31]),node(charg[33],xp[32],yp[32]),node(charg[34],xp[33],yp[33]),node(charg[35],xp[34],yp[34])
+N36,N37,N38,N39,N40=node(charg[36],xp[35],yp[35]),node(charg[37],xp[36],yp[36]),node(charg[38],xp[37],yp[37]),node(charg[39],xp[38],yp[38]),node(charg[40],xp[39],yp[39])
+
+
+
 #endnode
-N21=node(200,200,200)
+N41=node(400,400,400)
 
 n=1
 
@@ -273,7 +401,27 @@ def result():
 		Node 18 :  %d -->Time: %d sec 	---> Charge remaining : %s
 		Node 19 :  %d -->Time: %d sec 	---> Charge remaining : %s
 		Node 20 :  %d -->Time: %d sec 	---> Charge remaining : %s
-		'''%(total_nodes,visited,N1.check,N1.times,N1.show(),N2.check,N2.times,N2.show(),N3.check,N3.times,N3.show(),N4.check,N4.times,N4.show(),N5.check,N5.times,N5.show(),N6.check,N6.times,N6.show(),N7.check,N7.times,N7.show(),N8.check,N8.times,N8.show(),N9.check,N9.times,N9.show(),N10.check,N10.times,N10.show(),N11.check,N11.times,N11.show(),N12.check,N12.times,N12.show(),N13.check,N13.times,N13.show(),N14.check,N14.times,N14.show(),N15.check,N15.times,N15.show(),N16.check,N16.times,N16.show(),N17.check,N17.times,N17.show(),N18.check,N18.times,N18.show(),N19.check,N19.times,N19.show(),N20.check,N20.times,N20.show())
+		Node 21 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 22 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 23 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 24 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 25 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 26 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 27 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 28 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 29 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 30 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 31 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 32 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 33 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 34 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 35 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 36 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 37 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 38 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 39 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		Node 40 :  %d -->Time: %d sec 	---> Charge remaining : %s
+		'''%(total_nodes,visited,N1.check,N1.times,N1.show(),N2.check,N2.times,N2.show(),N3.check,N3.times,N3.show(),N4.check,N4.times,N4.show(),N5.check,N5.times,N5.show(),N6.check,N6.times,N6.show(),N7.check,N7.times,N7.show(),N8.check,N8.times,N8.show(),N9.check,N9.times,N9.show(),N10.check,N10.times,N10.show(),N11.check,N11.times,N11.show(),N12.check,N12.times,N12.show(),N13.check,N13.times,N13.show(),N14.check,N14.times,N14.show(),N15.check,N15.times,N15.show(),N16.check,N16.times,N16.show(),N17.check,N17.times,N17.show(),N18.check,N18.times,N18.show(),N19.check,N19.times,N19.show(),N20.check,N20.times,N20.show(),N21.check,N21.times,N21.show(),N22.check,N22.times,N22.show(),N23.check,N23.times,N23.show(),N24.check,N24.times,N24.show(),N25.check,N25.times,N25.show(),N26.check,N26.times,N26.show(),N27.check,N27.times,N27.show(),N28.check,N28.times,N28.show(),N29.check,N29.times,N29.show(),N30.check,N30.times,N30.show(),N31.check,N31.times,N31.show(),N32.check,N32.times,N32.show(),N33.check,N33.times,N33.show(),N34.check,N34.times,N34.show(),N35.check,N35.times,N35.show(),N36.check,N36.times,N36.show(),N37.check,N37.times,N37.show(),N38.check,N38.times,N38.show(),N39.check,N39.times,N39.show(),N40.check,N40.times,N40.show())
 	print(data)
 	write_to_file(data)
 
@@ -300,6 +448,26 @@ def discharge_all():
 	N18.discharge()
 	N19.discharge()
 	N20.discharge()
+	N21.discharge()
+	N22.discharge()
+	N23.discharge()
+	N24.discharge()
+	N25.discharge()
+	N26.discharge()
+	N27.discharge()
+	N28.discharge()
+	N29.discharge()
+	N30.discharge()
+	N31.discharge()
+	N32.discharge()
+	N33.discharge()
+	N34.discharge()
+	N35.discharge()
+	N36.discharge()
+	N37.discharge()
+	N38.discharge()
+	N39.discharge()
+	N40.discharge()
 
 file=open("Output.txt","w")
 
@@ -620,8 +788,314 @@ def searching(x,y,r,times):
 				N20.charger(N20.charge)
 				mfile.write("\tCharged by Mobile node")
 				times=times+4
+
+
+
+
 	if(N21.check!=1):
-		N21.update_time(times)
+		z=math.sqrt((pow(N21.xpos-x,2))+pow(N21.ypos-y,2))
+		if(z < (N21.radius+r)):
+			w=("\t\tNode21 Found at [xpos:%s][ypos:%s]  \n\t\tNode21 -> Charge:%d"%(N21.xpos,N21.ypos,N21.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N21.check=1
+			visited+=1
+			N21.update_time(times)
+			if N21.charge<30 and n==1:
+				print("\t\tLow Battery...")
+				N21.charger(N21.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N22.check!=1):
+		z=math.sqrt((pow(N22.xpos-x,2))+pow(N22.ypos-y,2))
+		if(z < (N22.radius+r)):
+			w=("\t\tNode22 Found at [xpos:%s][ypos:%s]  \n\t\tNode22 -> Charge:%d"%(N22.xpos,N22.ypos,N22.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N22.check=1
+			visited+=1
+			N22.update_time(times)
+			if N22.charge<30 and n==1:
+				print("\t\tLow Battery...")
+				N22.charger(N22.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N23.check!=1):
+		z=math.sqrt((pow(N23.xpos-x,2))+pow(N23.ypos-y,2))
+		if(z < (N23.radius+r)):
+			w=("\t\tNode23 Found at [xpos:%s][ypos:%s]  \n\t\tNode23 -> Charge:%d"%(N23.xpos,N23.ypos,N23.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N23.check=1
+			visited+=1
+			N23.update_time(times)
+			if N23.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N23.charger(N23.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N24.check!=1):
+		z=math.sqrt((pow(N24.xpos-x,2))+pow(N24.ypos-y,2))
+		if(z < (N24.radius+r)):
+			w=("\t\tNode24 Found at [xpos:%s][ypos:%s]  \n\t\tNode24 -> Charge:%d"%(N24.xpos,N24.ypos,N24.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N24.check=1
+			N24.update_time(times)
+			visited+=1
+			if N24.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N24.charger(N24.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N25.check!=1):
+		z=math.sqrt((pow(N25.xpos-x,2))+pow(N25.ypos-y,2))
+		if(z < (N25.radius+r)):
+			w=("\t\tNode25 Found at [xpos:%s][ypos:%s]  \n\t\tNode25 -> Charge:%d"%(N25.xpos,N25.ypos,N25.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N25.check=1
+			visited+=1
+			N25.update_time(times)
+			if N25.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N25.charger(N25.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N26.check!=1):
+		z=math.sqrt((pow(N26.xpos-x,2))+pow(N26.ypos-y,2))
+		if(z < (N26.radius+r)):
+			w=("\t\tNode6 Found at [xpos:%s][ypos:%s]  \n\t\tNode6 -> Charge:%d"%(N26.xpos,N26.ypos,N26.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N26.check=1
+			visited+=1
+			N26.update_time(times)
+			if N26.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N26.charger(N26.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N27.check!=1):
+		z=math.sqrt((pow(N27.xpos-x,2))+pow(N27.ypos-y,2))
+		if(z < (N27.radius+r)):
+			w=("\t\tNode27 Found at [xpos:%s][ypos:%s]  \n\t\tNode27 -> Charge:%d"%(N27.xpos,N27.ypos,N27.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N27.check=1
+			visited+=1
+			N27.update_time(times)
+			if N27.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N27.charger(N27.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N28.check!=1):
+		z=math.sqrt((pow(N28.xpos-x,2))+pow(N28.ypos-y,2))
+		if(z < (N28.radius+r)):
+			w=("\t\tNode28 Found at [xpos:%s][ypos:%s]  \n\t\tNode8 -> Charge:%d"%(N28.xpos,N28.ypos,N28.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N28.check=1
+			visited+=1
+			N28.update_time(times)
+			if N28.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N28.charger(N28.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N29.check!=1):
+		z=math.sqrt((pow(N29.xpos-x,2))+pow(N29.ypos-y,2))
+		if(z < (N29.radius+r)):
+			w=("\t\tNode29 Found at [xpos:%s][ypos:%s]  \n\t\tNode9 -> Charge:%d"%(N29.xpos,N29.ypos,N29.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N29.check=1
+			visited+=1
+			N29.update_time(times)
+			if N29.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N29.charger(N29.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N30.check!=1):
+		z=math.sqrt((pow(N30.xpos-x,2))+pow(N30.ypos-y,2))
+		if(z < (N30.radius+r)):
+			w=("\t\tNode30 Found at [xpos:%s][ypos:%s]  \n\t\tNode10 -> Charge:%d"%(N30.xpos,N30.ypos,N30.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N30.check=1
+			visited+=1
+			N30.update_time(times)
+			if N30.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N30.charger(N30.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N31.check!=1):
+		z=math.sqrt((pow(N31.xpos-x,2))+pow(N31.ypos-y,2))
+		if(z < (N31.radius+r)):
+			w=("\t\tNode31 Found at [xpos:%s][ypos:%s]  \n\t\tNode11 -> Charge:%d"%(N31.xpos,N31.ypos,N31.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N31.check=1
+			visited+=1
+			N31.update_time(times)
+			if N31.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N31.charger(N31.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+
+	if(N32.check!=1):
+		z=math.sqrt((pow(N32.xpos-x,2))+pow(N32.ypos-y,2))
+		if(z < (N32.radius+r)):
+			w=("\t\tNode32 Found at [xpos:%s][ypos:%s]  \n\t\tNode12 -> Charge:%d"%(N32.xpos,N32.ypos,N32.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N32.check=1
+			visited+=1
+			N32.update_time(times)
+			if N32.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N32.charger(N32.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N33.check!=1):
+		z=math.sqrt((pow(N33.xpos-x,2))+pow(N33.ypos-y,2))
+		if(z < (N33.radius+r)):
+			w=("\t\tNode33 Found at [xpos:%s][ypos:%s]  \n\t\tNode33 -> Charge:%d"%(N33.xpos,N33.ypos,N33.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N33.check=1
+			visited+=1
+			N33.update_time(times)
+			if N33.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N33.charger(N33.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N34.check!=1):
+		z=math.sqrt((pow(N34.xpos-x,2))+pow(N34.ypos-y,2))
+		if(z < (N34.radius+r)):
+			w=("\t\tNode34 Found at [xpos:%s][ypos:%s]  \n\t\tNode14 -> Charge:%d"%(N34.xpos,N34.ypos,N34.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N34.check=1
+			visited+=1
+			N34.update_time(times)
+			if N34.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N34.charger(N34.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N35.check!=1):
+		z=math.sqrt((pow(N35.xpos-x,2))+pow(N35.ypos-y,2))
+		if(z < (N35.radius+r)):
+			w=("\t\tNode35 Found at [xpos:%s][ypos:%s]  \n\t\tNode15 -> Charge:%d"%(N35.xpos,N35.ypos,N35.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N35.check=1
+			visited+=1
+			N35.update_time(times)
+			if N35.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N35.charger(N35.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N36.check!=1):
+		z=math.sqrt((pow(N36.xpos-x,2))+pow(N36.ypos-y,2))
+		if(z < (N36.radius+r)):
+			w=("\t\tNode36 Found at [xpos:%s][ypos:%s]  \n\t\tNode16 -> Charge:%d"%(N36.xpos,N36.ypos,N36.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N36.check=1
+			visited+=1
+			N36.update_time(times)
+			if N36.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N36.charger(N36.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N37.check!=1):
+		z=math.sqrt((pow(N37.xpos-x,2))+pow(N37.ypos-y,2))
+		if(z < (N37.radius+r)):
+			w=("\t\tNode37 Found at [xpos:%s][ypos:%s]  \n\t\tNode17 -> Charge:%d"%(N37.xpos,N37.ypos,N37.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N37.check=1
+			visited+=1
+			N37.update_time(times)
+			if N37.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N37.charger(N37.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N38.check!=1):
+		z=math.sqrt((pow(N38.xpos-x,2))+pow(N38.ypos-y,2))
+		if(z < (N38.radius+r)):
+			w=("\t\tNode38 Found at [xpos:%s][ypos:%s]  \n\t\tNode18 -> Charge:%d"%(N38.xpos,N38.ypos,N38.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N38.check=1
+			visited+=1
+			N38.update_time(times)
+			if N38.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N38.charger(N38.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N39.check!=1):
+		z=math.sqrt((pow(N39.xpos-x,2))+pow(N39.ypos-y,2))
+		if(z < (N39.radius+r)):
+			w=("\t\tNode39 Found at [xpos:%s][ypos:%s]  \n\t\tNode19 -> Charge:%d"%(N39.xpos,N39.ypos,N39.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N39.check=1
+			visited+=1
+			N39.update_time(times)
+			if N39.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N39.charger(N39.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+	if(N40.check!=1):
+		z=math.sqrt((pow(N40.xpos-x,2))+pow(N40.ypos-y,2))
+		if(z < (N40.radius+r)):
+			w=("\t\tNode40 Found at [xpos:%s][ypos:%s]  \n\t\tNode20 -> Charge:%d"%(N40.xpos,N40.ypos,N40.charge))
+			mfile.write("\n\n"+w)
+			print(w)
+			N40.check=1
+			visited+=1
+			N40.update_time(times)
+			if N40.charge<30  and n==1:
+				print("\t\tLow Battery...")
+				N40.charger(N40.charge)
+				mfile.write("\tCharged by Mobile node")
+				times=times+4
+
+
+	if(N41.check!=1):
+		N41.update_time(times)
 
 r=Mobile_node_radius
 
@@ -633,9 +1107,9 @@ def forward(y,r):
 		v=round(a,2)
 		l.append(v)
 	myFormattedList = [ float(Decimal('%.2f'% elem)) for elem in l ]
-	z=round((r/200),2)*10
+	z=round((r/400),2)*10
 	while(D.ypos in myFormattedList):
-		if(D.ypos<200):
+		if(D.ypos<400):
 			timer()
 			D.ypos+=z
 			D.ypos=round(D.ypos,2)
@@ -659,9 +1133,9 @@ def backward(y,r):
 		v=round(a,2)
 		l.append(v)
 	myFormattedList = [ float(Decimal('%.2f'% elem)) for elem in l ]
-	z=round((r/200),2)*10
+	z=round((r/400),2)*10
 	while(D.ypos in myFormattedList):
-		if(D.ypos<200):
+		if(D.ypos<400):
 			timer()
 			D.ypos+=z
 			D.ypos=round(D.ypos,2)
@@ -718,6 +1192,46 @@ def whennetworkstop():
 		print( ' Node 19 dies at %s sec'%round((N19.charge*2)+times))
 	if N20.check!=0:
 		print( ' Node 20 dies at %s sec'%round((N20.charge*2)+times))
+	if N21.check!=0:
+		print( ' Node 21 dies at %s sec'%round((N21.charge*2)+times))
+	if N22.check!=0:
+		print(' Node 22 dies at %s sec'%round((N22.charge*2)+times))
+	if N23.check!=0:
+		print(' Node 23 dies at %s sec'%round((N23.charge*2)+times))
+	if N24.check!=0:
+		print( ' Node 24 dies at %s sec'%round((N24.charge*2)+times))
+	if N25.check!=0:
+		print( ' Node 25 dies at %s sec'%round((N25.charge*2)+times))
+	if N26.check!=0:
+		print( ' Node 26 dies at %s sec'%round((N26.charge*2)+times))
+	if N27.check!=0:
+		print( ' Node 27 dies at %s sec'%round((N27.charge*2)+times))
+	if N28.check!=0:
+		print( ' Node 28 dies at %s sec'%round((N28.charge*2)+times))
+	if N29.check!=0:
+		print( ' Node 29 dies at %s sec'%round((N29.charge*2)+times))
+	if N30.check!=0:
+		print( ' Node 30 dies at %s sec'%round((N30.charge*2)+times))
+	if N31.check!=0:
+		print( ' Node 31 dies at %s sec'%round((N31.charge*2)+times))
+	if N32.check!=0:
+		print( ' Node 32 dies at %s sec'%round((N32.charge*2)+times))
+	if N33.check!=0:
+		print( ' Node 33 dies at %s sec'%round((N33.charge*2)+times))
+	if N34.check!=0:
+		print( ' Node 34 dies at %s sec'%round((N34.charge*2)+times))
+	if N35.check!=0:
+		print( ' Node 35 dies at %s sec'%round((N35.charge*2)+times))
+	if N36.check!=0:
+		print( ' Node 36 dies at %s sec'%round((N36.charge*2)+times))
+	if N37.check!=0:
+		print( ' Node 37 dies at %s sec'%round((N37.charge*2)+times))
+	if N38.check!=0:
+		print( ' Node 38 dies at %s sec'%round((N38.charge*2)+times))
+	if N39.check!=0:
+		print( ' Node 39 dies at %s sec'%round((N39.charge*2)+times))
+	if N40.check!=0:
+		print( ' Node 40 dies at %s sec'%round((N40.charge*2)+times))
 
 # Execution starts
 print("**** Mobile node starts ****")
@@ -754,6 +1268,26 @@ y10.append(N17.times)
 y10.append(N18.times)
 y10.append(N19.times)
 y10.append(N20.times)
+y10.append(N21.times)
+y10.append(N22.times)
+y10.append(N23.times)
+y10.append(N24.times)
+y10.append(N25.times)
+y10.append(N26.times)
+y10.append(N27.times)
+y10.append(N28.times)
+y10.append(N29.times)
+y10.append(N30.times)
+y10.append(N31.times)
+y10.append(N32.times)
+y10.append(N33.times)
+y10.append(N34.times)
+y10.append(N35.times)
+y10.append(N36.times)
+y10.append(N37.times)
+y10.append(N38.times)
+y10.append(N39.times)
+y10.append(N40.times)
 
 print('Node left time:\n*********************************')
 
@@ -761,32 +1295,33 @@ lenn=len(nodename)
 
 for v1,v2 in zip(lefttime,nodename):
 	print("%s Left at the time : %d sec"%(v2,v1))
-
-effecting=int((20-lenn)/20*100)
+print('deleted : %d'%lenn)
+effecting=int((40-lenn)/40*100)
 print('\n\nefficiency of network: %d %%'%effecting)
-balance=N1.check+N2.check+N3.check+N4.check+N5.check+N6.check+N7.check+N8.check+N9.check+N10.check+N11.check+N12.check+N13.check+N14.check+N15.check+N16.check+N17.check+N18.check+N19.check+N20.check
-print('\n%d Nodes alive in network'%-(20-lenn-20-balance))
+valx=N26.check+N27.check+N28.check+N29.check+N30.check+N31.check+N32.check+N33.check+N34.check+N35.check+N36.check+N37.check+N38.check+N39.check+N40.check
+balance=N1.check+N2.check+N3.check+N4.check+N5.check+N6.check+N7.check+N8.check+N9.check+N10.check+N11.check+N12.check+N13.check+N14.check+N15.check+N16.check+N17.check+N18.check+N19.check+N20.check+N21.check+N22.check+N23.check+N24.check+N25.check+valx
+print('\n%d Nodes alive in network'%(80-lenn-balance))
 
 
 whennetworkstop()
 
 x10 = []
-for w in range(1,21):
+for w in range(1,41):
 	x10.append(w)
 
 plt.plot(x10, y10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
 plt.ylim(1,max(y10)+5)
-plt.xlim(1,20)
+plt.xlim(1,40)
 plt.xlabel('Nodes in Network')
 plt.ylabel('Time')
 plt.title('Visit order of static node')
 
 plt.show()
 
-for plotx,ploty,node in zip(nodexpos,nodeypos,range(1,21)):
+for plotx,ploty,node in zip(nodexpos,nodeypos,range(1,41)):
 	plt1.text(plotx,ploty+5 ,node )
 plt1.plot(nodexpos,nodeypos, 'ro')
-plt1.axis([0,200, 0, 205])
+plt1.axis([0,400, 0, 405])
 plt1.xlabel('x- axis')
 plt1.ylabel('y - axis')
 plt1.title('Static node position')

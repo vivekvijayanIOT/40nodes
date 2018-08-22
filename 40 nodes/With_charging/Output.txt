@@ -1,33 +1,53 @@
 *******Python Code**********
-	Output for Execution done on :Mon Aug 20 19:27:21 2018
+	Output for Execution done on :Wed Aug 22 12:53:10 2018
 
  *** With charging ***			-----*****Result******-----
 
 
-	Total Nodes : 20 		 Nodes visited: 20
+	Total Nodes : 40 		 Nodes visited: 40
 
 	        		Note : 0-Not visited   1-Visited
 
 
 
-		Node 1 :   1 -->Time: 38 sec 	---> Charge remaining : 17%
-		Node 2 :   1 -->Time: 2 sec 	---> Charge remaining : 17%
-		Node 3 :   1 -->Time: 1 sec 	---> Charge remaining : 17%
-		Node 4 :   1 -->Time: 1 sec 	---> Charge remaining : 17%
-		Node 5 :   1 -->Time: 79 sec 	---> Charge remaining : 17%
-		Node 6 :   1 -->Time: 46 sec 	---> Charge remaining : 17%
-		Node 7 :   1 -->Time: 34 sec 	---> Charge remaining : 17%
-		Node 8 :   1 -->Time: 34 sec 	---> Charge remaining : 17%
-		Node 9 :   1 -->Time: 32 sec 	---> Charge remaining : 17%
-		Node 10 :  1 -->Time: 38 sec 	---> Charge remaining : 17%
-		Node 11 :  1 -->Time: 46 sec 	---> Charge remaining : 17%
-		Node 12 :  1 -->Time: 48 sec 	---> Charge remaining : 17%
-		Node 13 :  1 -->Time: 34 sec 	---> Charge remaining : 17%
-		Node 14 :  1 -->Time: 48 sec 	---> Charge remaining : 17%
-		Node 15 :  1 -->Time: 33 sec 	---> Charge remaining : 17%
-		Node 16 :  1 -->Time: 4 sec 	---> Charge remaining : 17%
-		Node 17 :  1 -->Time: 35 sec 	---> Charge remaining : 17%
-		Node 18 :  1 -->Time: 46 sec 	---> Charge remaining : 17%
-		Node 19 :  1 -->Time: 71 sec 	---> Charge remaining : 17%
-		Node 20 :  1 -->Time: 94 sec 	---> Charge remaining : 105%
-		Total time taken : 106 sec
+		Node 1 :   1 -->Time: 68 sec 	---> Charge remaining : 0%
+		Node 2 :   1 -->Time: 1 sec 	---> Charge remaining : 0%
+		Node 3 :   1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 4 :   1 -->Time: 71 sec 	---> Charge remaining : 0%
+		Node 5 :   1 -->Time: 7 sec 	---> Charge remaining : 0%
+		Node 6 :   1 -->Time: 67 sec 	---> Charge remaining : 0%
+		Node 7 :   1 -->Time: 74 sec 	---> Charge remaining : 0%
+		Node 8 :   1 -->Time: 3 sec 	---> Charge remaining : 0%
+		Node 9 :   1 -->Time: 73 sec 	---> Charge remaining : 0%
+		Node 10 :  1 -->Time: 71 sec 	---> Charge remaining : 0%
+		Node 11 :  1 -->Time: 7 sec 	---> Charge remaining : 0%
+		Node 12 :  1 -->Time: 67 sec 	---> Charge remaining : 0%
+		Node 13 :  1 -->Time: 67 sec 	---> Charge remaining : 0%
+		Node 14 :  1 -->Time: 3 sec 	---> Charge remaining : 0%
+		Node 15 :  1 -->Time: 4 sec 	---> Charge remaining : 0%
+		Node 16 :  1 -->Time: 71 sec 	---> Charge remaining : 0%
+		Node 17 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 18 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 19 :  1 -->Time: 5 sec 	---> Charge remaining : 0%
+		Node 20 :  1 -->Time: 3 sec 	---> Charge remaining : 0%
+		Node 21 :  1 -->Time: 72 sec 	---> Charge remaining : 0%
+		Node 22 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 23 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 24 :  1 -->Time: 4 sec 	---> Charge remaining : 0%
+		Node 25 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 26 :  1 -->Time: 67 sec 	---> Charge remaining : 0%
+		Node 27 :  1 -->Time: 72 sec 	---> Charge remaining : 0%
+		Node 28 :  1 -->Time: 1 sec 	---> Charge remaining : 0%
+		Node 29 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 30 :  1 -->Time: 76 sec 	---> Charge remaining : 0%
+		Node 31 :  1 -->Time: 67 sec 	---> Charge remaining : 0%
+		Node 32 :  1 -->Time: 6 sec 	---> Charge remaining : 0%
+		Node 33 :  1 -->Time: 74 sec 	---> Charge remaining : 0%
+		Node 34 :  1 -->Time: 72 sec 	---> Charge remaining : 0%
+		Node 35 :  1 -->Time: 74 sec 	---> Charge remaining : 0%
+		Node 36 :  1 -->Time: 67 sec 	---> Charge remaining : 0%
+		Node 37 :  1 -->Time: 68 sec 	---> Charge remaining : 0%
+		Node 38 :  1 -->Time: 4 sec 	---> Charge remaining : 0%
+		Node 39 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Node 40 :  1 -->Time: 70 sec 	---> Charge remaining : 0%
+		Total time taken : 200 sec
