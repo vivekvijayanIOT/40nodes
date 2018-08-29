@@ -49,7 +49,7 @@ class node:
 			self.times=times
 			if(n>=80):
 				break
-		self.charge=self.charge+n
+		self.charge=self.charge+n-5
 
 		print("\t\t************ 80% Charging completed*************")
 
